@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-color: #f0f0f0;
+    font-family: "微软雅黑";
+}
+.a_top{
+    height: 77px;
+    background-color: #e64437;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+.a_top .cshi{
+    float: left;
+    overflow: hidden;
+    width: 26%;
+}
+.a_top .cshi .dw{
+    float: left;
+    width:21px;
+    height:27px;
+    margin-top: 25px;
+    margin-left: 20%;
+    background: url(../img/icon.png) no-repeat -25px 0;
+}
+.a_top .cshi .city{
+    float: left;
+    color: #fff;
+    line-height: 75px;
+    font-size: 24px;
+    margin-left:5%;
+}
+.a_top .cshi .xla{
+    float: left;
+    margin: 35px 10% 0 10%;
+    width:20px;
+    height:10px;
+    background: url(../img/icon.png) no-repeat -50px -5px;
+}
+.a_top .search{
+    font-family: "黑体";
+    width: 65%;
+    margin-top: 18px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding-left: 42px;
+    font-size: 1.3em;
+    background-image: url(../img/search.png);
+    background-repeat:no-repeat ;
+    background-position: 15px 9px;
+}
+.footer{
+    overflow:hidden;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    background-color:#fff;
+    padding: 10px 0;
+    border-top: 1px solid #c1c1c1;
+}
+.footer i{
+    display: inline-block;
+    background: url(../img/icon.png) no-repeat 0 0;
+}
+.footer li:first-child i{
+    width: 25px;
+    height:25px;
+    background-position:-166px -51px;
+}
+.footer li:nth-child(2) i{
+    width: 24px;
+    height:23px;
+    background-position:-201px -52px;
+}
+.footer li:nth-child(3) i{
+    width: 26px;
+    height:26px;
+    background-position:-236px -49px;
+}
+.footer li:nth-child(4) i{
+    width: 30px;
+    height:26px;
+    background-position:-272px -48px;
+}
+.footer li{
+    float:left;
+    width:25%;
+    text-align:center;
+    color: #787878;
+    font-size: 18px;
+}
+div.zw{
+    height:75px;
+}

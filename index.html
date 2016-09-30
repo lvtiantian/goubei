@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>购呗首页</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--移动端版本兼容-->
+    <script type="text/javascript">
+        var phoneWidth =  parseInt(window.screen.width);
+        var phoneScale = phoneWidth/640;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+    <!--移动端版本兼容 end-->
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header id="header">
+
+    </header>
+    <div class="banner">
+        <div class="carousel slide" data-ride="carousel" id="mycarousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/hdtp.png" alt="" width="100%"/>
+                </div>
+                <div class="item">
+                    <img src="img/hdtp.png" alt="" width="100%"/>
+                </div>
+                <div class="item">
+                    <img src="img/hdtp.png" alt="" width="100%"/>
+                </div>
+                <div class="item">
+                    <img src="img/hdtp.png" alt="" width="100%"/>
+                </div>
+                <div class="item">
+                    <img src="img/hdtp.png" alt="" width="100%"/>
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+                <li data-target="#mycarousel" data-slide-to="3"></li>
+                <li data-target="#mycarousel" data-slide-to="4"></li>
+            </ol>
+        </div>
+    </div>
+    <div class="nav_list">
+        <span class="nav_list_fl" ><img src="img/tb.png"><p>美食</p></span>
+        <span class="nav_list_fl" ><img src="img/lr.png"><p>丽人</p></span>
+        <span class="nav_list_fl"><img src="img/jdyl.png"><p>酒店/娱乐</p></span>
+        <span class="nav_list_fl"><img src="img/qcmr.png"><p>汽车美容</p></span>
+        <span class="nav_list_fl" ><img src="img/zxsj.png"><p>最新上架</p></span>
+        <span class="nav_list_fl" ><img src="img/mysh.png"><p>母婴/生活</p></span>
+        <span class="nav_list_fl"><img src="img/jjjc.png"><p>家居建材</p></span>
+        <span class="nav_list_fl"><img src="img/sc.png"><p>商城</p></span>
+    </div>
+    <!--热卖商品 start-->
+    <div class="fl_list">
+        <div class="lm">
+            <i class="heart"></i>
+            <p class="fl_bt">热卖商品</p>
+            <p class="gd">更多商品>></p>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/spt.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXX披萨</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <p class="cp_js">【北大街】100元代金券1张，可叠加，免预约</p>
+                <div>
+                    <p class="cp_price">￥95<span>门市价：￥100</span><span class="cp_xs">已售：199</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/spt.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXX披萨</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <p class="cp_js">【北大街】100元代金券1张，可叠加， 免预约金券1张，可叠加， 免预约金券1张，可叠加， 免预约金券1张，可叠加， 免预约</p>
+                <div>
+                    <p class="cp_price">￥95<span>门市价：￥100</span><span class="cp_xs">已售：199</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--热卖商品 end-->
+    <!--人气商家 start-->
+    <div class="fl_list">
+        <div class="lm">
+            <i class="hot"></i>
+            <p class="fl_bt">人气商家</p>
+            <p class="gd">更多商品>></p>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/rqsj1.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXXXX咖啡小屋</p>
+                    <!--<p class="cp_jl">1.8km</p>-->
+                </div>
+                <div class="xingj_nav">
+                    <i></i>
+                    <p class="xingj_pj">2000评价</p>
+                    <p class="xingj_rj">人均：￥45</p>
+                </div>
+                <div>
+                    <p class="cp_line3">咖啡<span>北大街</span><span class="cp_line3_3">2.1km</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/rqsj2.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXXXX咖啡小屋</p>
+                    <!--<p class="cp_jl">1.8km</p>-->
+                </div>
+                <div class="xingj_nav">
+                    <i></i>
+                    <p class="xingj_pj">2000评价</p>
+                    <p class="xingj_rj">人均：￥45</p>
+                </div>
+                <div>
+                    <p class="cp_line3">咖啡<span>北大街</span><span class="cp_line3_3">2.1km</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--人气商家 end-->
+    <!--最新上架 start-->
+    <div class="fl_list">
+        <div class="lm">
+            <i class="zuixin"></i>
+            <p class="fl_bt">最新上架</p>
+            <p class="gd">更多商品>></p>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/spt.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXX披萨</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <p class="cp_js">【北大街】100元代金券1张，可叠加，免预约</p>
+                <div>
+                    <p class="cp_price">￥95<span>门市价：￥100</span><span class="cp_xs">已售：199</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/spt.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXX寿司</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <p class="cp_js">【北大街】100元代金券1张，可叠加， 免预约金券1张，可叠加， 免预约金券1张，可叠加， 免预约金券1张，可叠加， 免预约</p>
+                <div>
+                    <p class="cp_price">￥95<span>门市价：￥100</span><span class="cp_xs">已售：199</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--最新上架 end-->
+    <!--购呗推荐 start-->
+    <div class="fl_list">
+        <div class="lm">
+            <i class="zuixin"></i>
+            <p class="fl_bt">购呗推荐</p>
+            <p class="gd">更多商品>></p>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/spt.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXX披萨</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <p class="cp_js">【北大街】100元代金券1张，可叠加，免预约</p>
+                <div>
+                    <p class="cp_price">￥95<span>门市价：￥100</span><span class="cp_xs">已售：199</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/spt.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXX披萨</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <p class="cp_js">【北大街】100元代金券1张，可叠加， 免预约金券1张，可叠加， 免预约金券1张，可叠加， 免预约金券1张，可叠加， 免预约</p>
+                <div>
+                    <p class="cp_price">￥95<span>门市价：￥100</span><span class="cp_xs">已售：199</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--购呗推荐 end-->
+    <footer id="footer"></footer>
+    <script>
+        $("#header").load("data/header.php");
+        $("#footer").load("data/footer.php");
+    </script>
+</body>
+</html>

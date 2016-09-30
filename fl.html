@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>分类产品列表</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"  type="text/css" >
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/fl.css"/>
+    <script type="text/javascript">
+        var phoneWidth =  parseInt(window.screen.width);
+        var phoneScale = phoneWidth/640;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <div class="container">
+        <div class=" dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">美食
+                <i></i>
+            </button>
+            <ul class="dropdown-menu"  role="menu" aria-labelledby=" dropdownMenu1">
+                <li ><a href="#" role=" menuitem">自助餐</a></li>
+                <li ><a href="#" role=" menuitem">火锅</a></li>
+                <li ><a href="#" role=" menuitem">地方菜</a></li>
+            </ul>
+        </div>
+        <div class=" dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                区域
+                <i></i>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby=" dropdownMenu1">
+                <li ><a href="#" role=" menuitem">迎泽区</a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#" role=" menuitem">柳巷</a></li>
+                        <li><a href="#" role=" menuitem">柳巷</a></li>
+                        <li><a href="#" role=" menuitem">柳巷</a></li>
+                    </ul>
+                </li>
+                <li ><a href="#" role=" menuitem">杏花岭区</a></li>
+                <li ><a href="#" role=" menuitem">小店区</a></li>
+            </ul>
+        </div>
+        <div class=" dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                智能排序
+                <i></i>
+            </button>
+            <ul class="dropdown-menu"  role="menu" aria-labelledby=" dropdownMenu1">
+                <li ><a href="#" role=" menuitem">一</a></li>
+                <li ><a href="#" role=" menuitem">二</a></li>
+                <li ><a href="#" role=" menuitem">三</a></li>
+            </ul>
+        </div>
+        <div class=" dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                离我最近
+            </button>
+        </div>
+    </div>
+    <div class="dw">
+        <p class="dw_add">太原杏花岭区新建路XXXXXXXXXX50号</p>
+        <i></i>
+    </div>
+    <div id="banner">
+        <div class="carousel slide" data-ride="carousel" id="mycarousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/fl_sp_t.png" alt="" width="100%"/>
+                </div>
+                <div class="item">
+                    <img src="img/fl_sp_t.png" alt="" width="100%"/>
+                </div>
+                <div class="item">
+                    <img src="img/fl_sp_t.png" alt="" width="100%"/>
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="sp_list">
+        <div class="sp_list_01">
+            <img class="sp_list_01_left" src="img/spt.png" />
+            <div class="sp_list_01_right">
+                <h4 class="list_name">太原XXXXX寿司</h4>
+                <div class="list_bt_k">
+                    <p class="list_bt">精美寿司4人餐158,免预约 <span>（商品标题）</span></p>
+                    <p class="list_rj">人均：¥45</p>
+                </div>
+                <div class="list_fl_k">
+                    <p class="list_fl_name" >日式料理
+                        <span>
+                            <i></i>
+                            4.1分
+                        </span>
+                    </p>
+                    <p class="list_fl_add">解放 2.1km</p>
+                </div>
+            </div>
+        </div>
+        <div class="sp_other_list">
+            <i class="tab"></i>
+            <p class="sp_other_cp">4人餐158,6人餐208</p>
+            <p class="sp_other_yj">预计未来7天可报销15元</p>
+        </div>
+    </div>
+    <div class="sp_list">
+        <div class="sp_list_01">
+            <img class="sp_list_01_left" src="img/spt.png" />
+            <div class="sp_list_01_right">
+                <h4 class="list_name">太原XXXXX寿司</h4>
+                <div class="list_bt_k">
+                    <p class="list_bt">精美寿司4人餐158,免预约 <span>（商品标题)</span></p>
+                    <p class="list_rj">人均：¥45</p>
+                </div>
+                <div class="list_fl_k">
+                    <p class="list_fl_name" >日式料理
+                    <span>
+                        <i></i>
+                        4.1分
+                    </span>
+                    </p>
+                    <p class="list_fl_add">解放路 2.1km</p>
+                </div>
+            </div>
+        </div>
+        <div class="sp_other_list">
+            <i class="tab"></i>
+            <p class="sp_other_cp">4人餐158,6人餐208</p>
+            <p class="sp_other_yj">预计未来7天可报销15元</p>
+        </div>
+    </div>
+    <div class="sp_list">
+        <div class="sp_list_01">
+            <img class="sp_list_01_left" src="img/spt.png" />
+            <div class="sp_list_01_right">
+                <h4 class="list_name">太原XXXXX寿司</h4>
+                <div class="list_bt_k">
+                    <p class="list_bt">精美寿司4人餐158,免预约 <span>（商品标题)</span></p>
+                    <p class="list_rj">人均：¥45</p>
+                </div>
+                <div class="list_fl_k">
+                    <p class="list_fl_name" >日式料理
+                        <span>
+                            <i></i>
+                            4.1分
+                        </span>
+                    </p>
+                    <p class="list_fl_add">解放路 2.1km</p>
+                </div>
+            </div>
+        </div>
+        <div class="sp_other_list">
+            <i class="tab"></i>
+            <p class="sp_other_cp">4人餐158,6人餐208</p>
+            <p class="sp_other_yj">预计未来7天可报销15元</p>
+        </div>
+    </div>
+    <div class="sp_list">
+        <div class="sp_list_01">
+            <img class="sp_list_01_left" src="img/spt.png" />
+            <div class="sp_list_01_right">
+                <h4 class="list_name">太原XXXXX寿司</h4>
+                <div class="list_bt_k">
+                    <p class="list_bt">精美寿司4人餐158,免预约 <span>（商品标题)</span></p>
+                    <p class="list_rj">人均：¥45</p>
+                </div>
+                <div class="list_fl_k">
+                    <p class="list_fl_name" >日式料理
+                        <span>
+                            <i></i>
+                            4.1分
+                        </span></p>
+                    <p class="list_fl_add">解放路 2.1km</p>
+                </div>
+            </div>
+        </div>
+        <div class="sp_other_list">
+            <i class="tab"></i>
+            <p class="sp_other_cp">4人餐158,6人餐208</p>
+            <p class="sp_other_yj">预计未来7天可报销15元</p>
+        </div>
+    </div>
+    <script>
+        $("#header").load("data/header.php");
+    </script>
+</body>
+</html>

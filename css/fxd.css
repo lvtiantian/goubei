@@ -1,0 +1,192 @@
+.all_list {
+    margin: 10px 1%;
+    margin-top: 77px;
+    overflow: hidden;
+    width: 98%;
+    background-color: #fff;
+    box-shadow: 1px 5px 12px #999;
+    padding: 10px 0;
+}
+
+.all_list .list_01 {
+    float: left;
+    width: 33.12%;
+    text-align: center;
+    display: inline;
+    font-size: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.all_list .list_01:last-child {
+    border: 0;
+}
+
+.all_list .list_01 > i {
+    float: right;
+    width: 7px;
+    height: 7px;
+    background: url(../img/icon.png) no-repeat -147px -5px;
+    margin-top: 18px;
+    margin-right: 10%;
+}
+
+.all_list .list_01 .list_02 {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    width: 88%;
+    left: 0;
+    text-align: left;
+    padding: 0 5%;
+    opacity: 0.8;
+    margin: 0 1%;
+}
+
+.all_list .list_01 .list_02 li a {
+    color: #fff;
+}
+
+.all_list .list_01 .list_02 li {
+    color: #fff;
+    line-height: 40px;
+}
+
+.list_01:hover .list_02 {
+    display: block;
+    /*visibility: visible;*/
+}
+
+.list_01:hover .dq {
+    background-color: #666;
+}
+
+.list_01 .list_02 li:hover {
+    background-color: #666;
+}
+
+.list_01 .list_02 li:hover ul {
+    visibility: visible;
+}
+
+.list_01 .list_02 li ul {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    background-color: #666;
+    width: 65.5%;
+    left: 30%;
+    padding-left: 5%;
+    height: 100%;
+}
+
+.fl_list {
+    width: 100%;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+.fl_list .fl_nav {
+    overflow: hidden;
+    border-bottom: 1px solid #787878;
+}
+
+.fl_list .fl_nav .cpt {
+    padding: 18px 2%;
+    float: left;
+    width: 20%;
+}
+
+.fl_list .fl_nav .cp_nav {
+    float: left;
+    width: 76%;
+}
+
+.fl_list .fl_nav .cp_nav .cp_name_kuang {
+    overflow: hidden;
+    line-height: 2.6em;
+    margin-top: 10px;
+}
+
+.fl_list .fl_nav .cp_nav .cp_name_kuang .cp_name {
+    font-size: 25px;
+    float: left;
+}
+
+.fl_list .fl_nav .cp_nav .cp_name_kuang .cp_jl {
+    font-size: 25px;
+    float: right;
+    margin-right: 4%;
+}
+
+.fl_list .fl_nav .cp_nav .cp_js {
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.6em;
+    font-size: 20px;
+    color: #a09f9f;
+    height: 64px;
+}
+
+.cp_price {
+    color: #f00;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.cp_price span {
+    color: #787878;
+    margin-left: 4%;
+    font-size: 18px;
+}
+
+.cp_price .cp_xs {
+    float: right;
+    margin-right: 4%;
+}
+
+.xingj_nav {
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.xingj_nav .xingj {
+    float: left;
+    width: 157px;
+    height: 27px;
+    background: url(../img/icon.png) no-repeat -188px -294px;
+}
+
+.xingj_nav .xingj_pj {
+    float: left;
+    font-size: 20px;
+    margin-left: 4%;
+    line-height: 2em;
+}
+
+.xingj_nav .xingj_rj {
+    float: right;
+    margin-right: 4%;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.cp_line3 {
+    font-size: 20px;
+    margin-top: 13px;
+    color: #787878;
+}
+
+.cp_line3 span {
+    color: #787878;
+    margin-left: 4%;
+    font-size: 20px;
+}
+
+.cp_line3 .cp_line3_3 {
+    float: right;
+    margin-right: 4%;
+}

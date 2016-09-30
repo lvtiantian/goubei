@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>分销店</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/fxd.css"/>
+    <script type="text/javascript">
+        var phoneWidth =  parseInt(window.screen.width);
+        var phoneScale = phoneWidth/640;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <ul class="all_list">
+        <li class="list_01">全部分类
+            <i></i>
+            <ul class="list_02">
+                <li><a href="">美食</a></li>
+                <li><a href="">电影</a></li>
+                <li><a href="">丽人</a></li>
+            </ul>
+        </li>
+        <li class="list_01">全城
+            <i></i>
+            <ul class="list_02 ">
+                <li>迎泽区
+                    <ul class="list_03">
+                        <li><a href="">柳巷商业区</a></li>
+                        <li><a href="">柳巷商业区</a></li>
+                        <li><a href="">柳巷商业区</a></li>
+                        <li><a href="">柳巷商业区</a></li>
+                    </ul>
+                </li>
+                <li><a href="">万柏林区</a></li>
+                <li><a href="">杏花岭区</a></li>
+                <li><a href="">小店区</a></li>
+                <li><a href="">高新区</a></li>
+            </ul>
+        </li>
+        <li class="list_01">智能排序
+            <i></i>
+            <ul class="list_02">
+                <li><a href="">智能排序</a></li>
+                <li><a href="">离我最近</a></li>
+                <li><a href="">好评优先</a></li>
+                <li><a href="">人气最高</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!--购呗推荐 start-->
+    <div class="fl_list">
+        <div class="fl_nav">
+            <img class="cpt" src="img/rqsj1.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXXXX咖啡小屋</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <div class="xingj_nav">
+                    <i class="xingj"></i>
+                    <p class="xingj_pj">2000评价</p>
+                    <p class="xingj_rj">人均：￥45</p>
+                </div>
+                <div>
+                    <p class="cp_line3">咖啡<span>北大街</span><span class="cp_line3_3">2.1km</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/rqsj2.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXXXX寿司</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <div class="xingj_nav">
+                    <i class="xingj"></i>
+                    <p class="xingj_pj">2000评价</p>
+                    <p class="xingj_rj">人均：￥45</p>
+                </div>
+                <div>
+                    <p class="cp_line3">咖啡<span>北大街</span><span class="cp_line3_3">2.1km</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/rqsj1.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXXXX咖啡小屋</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <div class="xingj_nav">
+                    <i class="xingj"></i>
+                    <p class="xingj_pj">2000评价</p>
+                    <p class="xingj_rj">人均：￥45</p>
+                </div>
+                <div>
+                    <p class="cp_line3">咖啡<span>北大街</span><span class="cp_line3_3">2.1km</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/rqsj2.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXXXX寿司</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <div class="xingj_nav">
+                    <i class="xingj"></i>
+                    <p class="xingj_pj">2000评价</p>
+                    <p class="xingj_rj">人均：￥45</p>
+                </div>
+                <div>
+                    <p class="cp_line3">咖啡<span>北大街</span><span class="cp_line3_3">2.1km</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/rqsj1.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXXXX咖啡小屋</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <div class="xingj_nav">
+                    <i class="xingj"></i>
+                    <p class="xingj_pj">2000评价</p>
+                    <p class="xingj_rj">人均：￥45</p>
+                </div>
+                <div>
+                    <p class="cp_line3">咖啡<span>北大街</span><span class="cp_line3_3">2.1km</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/rqsj2.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXXXX寿司</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <div class="xingj_nav">
+                    <i class="xingj"></i>
+                    <p class="xingj_pj">2000评价</p>
+                    <p class="xingj_rj">人均：￥45</p>
+                </div>
+                <div>
+                    <p class="cp_line3">咖啡<span>北大街</span><span class="cp_line3_3">2.1km</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--购呗推荐 end-->
+    <footer id="footer"></footer>
+    <script>
+        $("#header").load("data/header.php");
+        $("#footer").load("data/footer.php");
+    </script>
+</body>
+</html>

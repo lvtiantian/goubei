@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>店面详情页</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/dm_detail.css"/>
+    <script type="text/javascript">
+        var phoneWidth =  parseInt(window.screen.width);
+        var phoneScale = phoneWidth/640;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <div class="dp_top">
+        <img class="dp_tp" src="img/dp_tp.png" width="100%"/>
+        <p class="dp_name">太原XXX披萨（新建北路店）</p>
+        <div class="dp_xx">
+            <i></i>
+            <p class="dp_xx_2">4.1分</p>
+            <p class="dp_xx_3">人均：￥45</p>
+        </div>
+        <div class="lxfs">
+            <div class="lx_dz">
+                <i></i>
+                <p class="lx_dz_wz">
+                    杏花岭区新建北路北大街口往北路东鑫磊大厦1楼0101号</p>
+            </div>
+            <div class="lx_phone">
+                <i></i>
+            </div>
+        </div>
+    </div>
+    <div class="dp_cp_kuang">
+        <div class="dp_cp_list">
+            <i class="tab"></i>
+            <img class="dp_cp_tu" src="img/spt.png" />
+            <div class="dp_cp_center">
+                <p class="dp_cp_centertop">芝士披萨双人餐，免预约</p>
+                <p class="dp_cp_centerbottom">￥79.9<span>门市价：¥ 101</span></p>
+            </div>
+            <p class="dp_cp_xl">已售351</p>
+            <i class="jt"></i>
+        </div>
+        <div class="dp_cp_list">
+            <i class="tab"></i>
+            <img class="dp_cp_tu" src="img/spt.png" />
+            <div class="dp_cp_center">
+                <p class="dp_cp_centertop">芝士披萨双人餐，免预约</p>
+                <p class="dp_cp_centerbottom">￥79.9<span>门市价：¥ 101</span></p>
+            </div>
+            <p class="dp_cp_xl">已售351</p>
+            <i class="jt"></i>
+        </div>
+    </div>
+    <div class="pj_kuang">
+        <div class="dp_zpj">
+            <i class="dp_zpj_01"></i>
+            <span>4.1分</span>
+            <P class="dp_zpj_02">高于60%的同行</P>
+        </div>
+        <div class="pj_tab">
+            <p class="pj_tab_bp">味道很好<span>64</span></p>
+            <p class="pj_tab_bp">服务态度很好<span>64</span></p>
+            <p class="pj_tab_bp">环境好<span>64</span></p>
+            <p class="pj_tab_bp">上菜快<span>64</span></p>
+            <p class="pj_tab_bp">原料品质不错12<span>64</span></p>
+            <p class="pj_tab_bp1">菜量一般<span>3</span></p>
+        </div>
+        <div class="px_xq">
+            <p class="px_xq_name">白小白</p>
+            <div class="px_xq_xj">
+                <i class="xj"></i>
+                <p class="date">2016-1-21</p>
+            </div>
+            <p class="pj_xq">就在楼下，很方便，又好吃，服务也不错和朋友经常一起来的，这次买的代金券，算下来挺便宜。</p>
+        </div>
+        <div class="px_xq">
+            <p class="px_xq_name">白小白</p>
+            <div class="px_xq_xj">
+                <i class="xj"></i>
+                <p class="date">2016-1-21</p>
+            </div>
+            <p class="pj_xq">就在楼下，很方便，又好吃，服务也不错和朋友经常一起来的，这次买的代金券，算下来挺便宜。</p>
+        </div>
+        <div class="px_xq">
+            <p class="px_xq_name">白小白</p>
+            <div class="px_xq_xj">
+                <i class="xj"></i>
+                <p class="date">2016-1-21</p>
+            </div>
+            <p class="pj_xq">就在楼下，很方便，又好吃，服务也不错和朋友经常一起来的，这次买的代金券，算下来挺便宜。</p>
+        </div>
+        <div class="ck_pj">
+            <p class="ck_pj_wz">查看全部 1302 条评价</p>
+            <i class="ck_pj_jt"></i>
+        </div>
+    </div>
+    <!--热卖商品 start-->
+    <div class="fl_list">
+        <div class="lm">
+            <p class="fl_bt">相关团购推荐</p>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/spt.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXX披萨</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <p class="cp_js">【北大街】100元代金券1张，可叠加，免预约</p>
+                <div>
+                    <p class="cp_price">￥95<span>门市价：￥100</span><span class="cp_xs">已售：199</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/spt.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXX披萨</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <p class="cp_js">【北大街】100元代金券1张，可叠加， 免预约金券1张，可叠加， 免预约金券1张，可叠加， 免预约金券1张，可叠加， 免预约</p>
+                <div>
+                    <p class="cp_price">￥95<span>门市价：￥100</span><span class="cp_xs">已售：199</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="fl_nav">
+            <img class="cpt" src="img/spt.png">
+            <div class="cp_nav">
+                <div class="cp_name_kuang">
+                    <p class="cp_name">太原XXX披萨</p>
+                    <p class="cp_jl">1.8km</p>
+                </div>
+                <p class="cp_js">【北大街】100元代金券1张，可叠加， 免预约金券1张，可叠加， 免预约金券1张，可叠加， 免预约金券1张，可叠加， 免预约</p>
+                <div>
+                    <p class="cp_price">￥95<span>门市价：￥100</span><span class="cp_xs">已售：199</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--热卖商品 end-->
+</body>
+</html>
