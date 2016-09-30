@@ -1,0 +1,215 @@
+.top{
+    background: #e64437;
+    color:#fff;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 20px;
+}
+.top .top_left{
+    padding: 20px 2%;
+    float: left;
+}
+.top .top_center{
+    float: left;
+    width: 60%;}
+.top .top_center .top_center_01{
+    padding-top: 26px;
+    overflow: hidden;
+    margin-top:-8px;
+}
+.top .top_center .top_center_01 .top_name{
+    float: left;
+    margin-right: 6%;
+    font-size: 24px;
+}
+.top .top_center .top_center_01 .top_xg{
+    padding-top:7px;
+    font-size: 16px;
+}
+.top .top_center .top_center_01 .top_xg i{
+    display: inline-block;
+    width:18px;
+    height:18px;
+    background:url("../img/icon.png") no-repeat -98px -5px;
+    margin-bottom:-3px;
+}
+.top .top_center .top_center_time{
+    margin: 5px 0;
+}
+.top .top_right{
+    float: right;
+    margin-top: 40px;
+}
+.top .top_right i{
+    display: inline-block;
+    background: url('../img/icon.png') no-repeat;
+}
+.top .top_right i.ewm{
+    width: 15px;
+    height:26px;
+    background-position: -124px -2px;
+    margin-left: 10px;
+}
+.top .top_right i.yjt{
+
+    height:29px;
+    width:29px;
+    background-position: -132px -190px;
+}
+.wddd_nav{
+    margin-top: 10px;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+.wddd_nav .wddd_bt{
+    overflow: hidden;
+    padding: 10px 4%;
+    font-size: 23px;
+    color:#787878;
+    border-bottom: 1px solid #787878;
+}
+.wddd_nav .wddd_bt i{
+    float: left;
+    background: url("../img/icon.png") no-repeat ;
+}
+.wddd_nav .wddd_bt i.dd{
+    width:23px;
+    height:28px;
+    background-position: -97px -85px;
+    margin:8px 10px 0 0;
+}
+.wddd_nav .wddd_bt .wddd_wz{
+    float: left;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+.wddd_nav .wddd_bt .all_wddd{
+    float: right;
+    font-size: 18px;
+    margin-top: 9px;
+}
+.wddd_nav .wddd_bt i.right{
+    float: right;
+    width:11px;
+    height:20px;
+    background-position: -251px -142px;
+    margin-left:20px;
+    margin-top:11px;
+ }
+.wddd_list{
+    overflow: hidden;
+    position:relative;
+    font-size: 20px;
+    color: #787878;
+    padding-top: 15px;
+}
+.wddd_list li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.wddd_list li i{
+    background: url("../img/icon.png") no-repeat;
+    display: inline-block;
+    width:44px;
+    height:44px;
+}
+.wddd_list li:first-child i{
+    background-position: -79px -131px;
+}
+.wddd_list li:nth-child(2) i{
+    background-position: -28px -130px;
+}
+.wddd_list li:nth-child(3) i{
+    background-position: -126px -130px;
+}
+.wddd_list li:nth-child(4) i{
+    background-position: -172px -127px;
+}
+.wddd_list li span{
+    color: #e64437;
+    font-size: 10px;
+    position: absolute;
+    border: 1px solid #e64437;
+    background: #fff;
+    border-radius: 40px;
+    padding: 2px 6px;
+    left: 64%;
+    top:9%;
+}
+.wddd_list li p{
+    margin-top:
+    10px;
+}
+.wdyj{
+    background-color:
+    #e64437;color:#fff;
+    padding: 20px 0;
+}
+.wdyj .ljyj{
+    overflow: hidden;
+    padding-top: 10px;
+}
+.wdyj .ljyj i{
+    float: left;
+    width:45px;
+    height:42px;
+    background: url(../img/icon.png) no-repeat -81px -182px;
+    margin: 10px 2%;
+}
+.wdyj .ljyj .ljyj_tb{
+
+}
+.wdyj .ljyj .ljyj_wz{
+    float: left;
+    font-size: 25px;
+    margin-top: 17px;
+}
+.wdyj .zyj{
+    font-size:50px;
+    text-align: center;
+    line-height: 3em;
+}
+.wdyj .zyj span{
+    font-size: 90px;
+    margin-right: 20px;
+}
+.wdyj .ktyj{
+    overflow: hidden;
+}
+.wdyj .ktyj i{
+    float: left;
+    margin: 7px 2%;
+    width:42px;
+    height:43px;
+    background: url(../img/icon.png) no-repeat -30px -182px;
+}
+.wdyj .ktyj .ljyj_wz{float: left;font-size: 25px;margin-top: 17px;}
+.wdyj .ktyj button{
+    float: right;
+    margin-right: 5%;
+    border: none;
+    color: #e64437;
+    font: 23px/23px "microsoft yahei";
+    background-color: #fff;
+    padding: 5px 15px;
+    margin-top: 18px;
+    border-radius: 20px;
+}
+.ckan_list{
+    overflow: hidden;
+    background-color: #fff;
+    width:100%;
+}
+.ckan_list .ckan_list_01{
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    color: #787878;
+    width: 33.12%;
+    border-right: 1px solid #787878;
+    padding:30px 0;
+}
+.ckan_list .ckan_list_01 .ckan_list_01_pic{}
+.ckan_list .ckan_list_01 .ckan_list_01_name{  line-height: 2em;}
+.ckan_list .ckan_list_01 .ckan_list_01_num{  color: #787878;}

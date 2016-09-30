@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>购呗-个人中心</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/grzx.css"/>
+    <script type="text/javascript">
+        var phoneWidth =  parseInt(window.screen.width);
+        var phoneScale = phoneWidth/640;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <div class="top">
+        <img class="top_left" src="img/grzx_tx.png"/>
+        <div class="top_center">
+            <div class="top_center_01">
+                <p class="top_name">爱睡觉的阿宅</p>
+                <p class="top_xg">信息修改
+                    <i></i>
+                </p>
+            </div>
+            <p class="top_center_time">加入时间：2015-04-27 11:59:09</p>
+        </div>
+        <div class="top_right">
+            <i class="yjt"></i>
+            <i class="ewm"></i>
+        </div>
+    </div>
+    <div class="wddd_nav">
+        <div class="wddd_bt">
+            <i class="dd"></i>
+            <p class="wddd_wz">我的订单</p>
+            <i class="right"></i>
+            <p class="all_wddd">查看全部订单</p>
+        </div>
+        <ul class="wddd_list">
+            <li><i></i><p>待付款</p></li>
+            <li><i></i><p>待消费</p></li>
+            <li><i></i><span>1</span><p>待评价</p></li>
+            <li><i></i><p>退款</p></li>
+        </ul>
+    </div>
+    <div class="wdyj">
+        <div class="ljyj">
+            <i></i>
+            <p class="ljyj_wz">累计佣金</p>
+        </div>
+        <p class="zyj"><span>20602.52</span>元</p>
+        <div class="ktyj">
+            <i></i>
+            <p class="ljyj_wz">可提佣金 <span>13865.05元</span></p>
+            <button>提现</button>
+        </div>
+    </div>
+    <ul class="ckan_list">
+        <li class="ckan_list_01">
+            <img class="ckan_list_01_pic" src="img/sytj_tb.png" />
+            <p class="ckan_list_01_name" style="color: #e64437;">收益统计</p>
+            <p class="ckan_list_01_num" style="color: #e64437;">2016元</p>
+        </li>
+        <li class="ckan_list_01">
+            <img class="ckan_list_01_pic" src="img/xflm_tb.png" />
+            <p class="ckan_list_01_name">消费联盟</p>
+            <p class="ckan_list_01_num"><span style="color: #e64437;">20</span>个小伙伴</p>
+        </li>
+        <li class="ckan_list_01" style="border-right:none;">
+            <img class="ckan_list_01_pic" src="img/ewmtg_tb.png" />
+            <p class="ckan_list_01_name">二维码</p>
+            <p class="ckan_list_01_num" style="color:#787878;">推广二维码</p>
+        </li>
+    </ul>
+    <footer id="footer"></footer>
+    <script>
+        $("#footer").load("data/footer.php");
+    </script>
+</body>
+</html>
