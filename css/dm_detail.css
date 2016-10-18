@@ -195,12 +195,11 @@
 .px_xq {
     padding: 10px 3%;
     border-bottom: 1px solid #999;
-    font-size: 20px;
 }
 
 .px_xq .px_xq_name {
     margin-bottom: 5px;
-    font-size: 22px;
+    font-size: 1em;
 }
 
 .px_xq .px_xq_xj {
@@ -222,10 +221,8 @@
 }
 
 .px_xq .pj_xq {
-    font-size: 20px;
     margin-top: 10px;
     color: #666;
-    line-height: 1.8em;
 }
 
 .ck_pj {
