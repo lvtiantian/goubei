@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>预约信息</title>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script src="js/common.js"></script>
+</head>
+
+<body>
+<header class="header" id="header">
+<a href="javascript:history.go(-1)" target=_self class="back">返回</a>
+<h1>预约信息</h1>
+</header>
+<!--header-end-->
+<div class="container" id="container"> 
+	<div>
+		<lable class="order_info_detail">医师信息:</lable>
+		<span class="order_info_text">牛和平</span>
+		<span class="order_info_detail2">副主任医师</span>
+	</div>
+	<div>
+		<lable class="order_info_detail">就诊时间:</lable>
+		<span class="order_info_text">2018-06-15</span>
+		<span class="order_info_detail2">上午</span>
+	</div>
+	<div>
+		<lable class="order_info_detail">就诊医院:</lable>
+		<span class="order_info_text">山西省人民医院</span>
+	</div>
+	<div>
+		<lable class="order_info_detail">就诊科室:</lable>
+		<span class="order_info_text">产科</span>
+	</div>
+	<div>
+		<lable class="order_info_detail">参考费用:</lable>
+		<span class="order_info_text">15.00元</span>
+	</div>
+	<div>
+		<lable class="order_info_detail">取号地点:</lable>
+		<span class="order_info_text">门诊一楼预约挂号专用窗口</span>
+	</div>
+	<div class="order_info_div">
+		<lable class="order_info_label"><b>就诊人信息</b></lable>
+	</div>
+	<div>
+		<lable class="order_info_detail" >就 诊 人:</lable>
+			<select  style="width: 75%;font-size: 0.75rem;">
+				<option id=""></option>
+				<option id="1">就诊人</option>
+				<option id="2">就诊人</option>
+				<option id="3">就诊人</option>
+			</select>
+	</div>
+	<hr style="margin-top: 3px;"/>
+	<div class="person_info_1">
+		<lable class="order_info_detail" >就诊类型:</lable>
+			<select  style="width: 75%;font-size: 0.75rem;">
+				<option id=""></option>
+				<option id="1">出诊</option>
+				<option id="2">复诊</option>
+			</select>
+	</div>
+	<hr style="margin-top: 3px;"/>
+	<div class="person_info_1">
+		<lable class="order_info_detail" >医保类型:</lable>
+			<select  style="width: 75%;font-size: 0.75rem;">
+				<option id=""></option>
+				<option id="1">普通</option>
+				<option id="2">社保</option>
+				<option id="3">保险</option>
+			</select>
+	</div>
+	<hr style="margin-top: 3px;"/>
+<div class="next-step">
+    <button type="button" class="submit-btn" id="loginBtn" onclick="javaScript:ensureOrder()">确定预约</button>
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+	function ensureOrder(){
+		$('#container').load("orderSusDetail.html");
+	}
+	
+</script>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <title>我的</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <style>
+        #container {
+            margin-top: 2rem;
+        }
+        .txt-box-info .tag{
+            font-size: 0.4rem;
+            background: #367fb7;
+            color:#fff;
+            padding:2px 5px;
+            border-radius: 10px;
+        }
+        .txt-box-info .list{
+            display: block;
+            margin:10px 0;
+            line-height:0.525rem;
+            border-left: 1px solid #666666;
+            padding-left:5px;
+        }
+    </style>
+</head>
+
+<body>
+<header class="header" id="header">
+    <a href="javascript:history.go(-1)" target=_self class="back">返回</a>
+    <h1>牛和平</h1>
+    <!--<a href="javascript:#" style="margin-right: 5px;">+关注</a>-->
+</header>
+<div class="container" id="container">
+    <div class="my-face">
+        <dl class="header-box">
+            <dt class="my-face-pic"><img src="images/my-face-pic.jpg"></dt>
+            <dt class="my-face-title">医生简介</dt>
+        </dl>
+        <div class="txt-box-info">
+            <span class="txt-font tag">副主任医师</span>
+            <span class="txt-font tag">执医35年</span>
+            <span class="txt-font list">执业证号：110140000000602</span>
+            <span class="txt-font list">患者评分：10分</span>
+        </div>
+    </div>
+    <!--垂直折叠-->
+    <div class="ul-div">
+        <ul class="order-ul">
+            <li class="order_li">
+                <div class="order_ul">
+                    <span class="label-ul">主治/擅长</span>
+                    <span class="arrow up"></span>
+                </div>
+                <ul class="charact-div-info">
+                    <div>
+                        <label class="order-label tag">产后出血</label>
+                        <label class="order-label tag">产褥感染</label>
+                    </div>
+                    <p class="txt-font info">擅长：妇产科疾病、滋养细胞病患。</p>
+                </ul>
+            </li>
+            <li class="order_li">
+                <div class="order_ul">
+                    <span class="label-ul">选择执业点</span>
+                    <span class="arrow up"></span>
+                </div>
+                <ul class="charact-div-info" hidden>
+                    <div>
+                        <label class="order-label">山西省人民医院</label>
+                        <label class="order-label">产科</label>
+                    </div>
+                    <div style="float: left;">
+                        <label class="order-label">副主任医师</label>
+                    </div>
+                    <div style="text-align:right;margin-right: 10px;">
+                        <label class="order_price">参考费用：<span class="money">￥15.00</span></label>
+                    </div>
+                </ul>
+            </li>
+            <li class="order_li">
+                <div class="order_ul">
+                    <span class="label-ul">选择时间</span>
+                    <span class="arrow up"></span>
+                </div>
+                <ul class="charact-div-info" hidden="hidden">
+                    <div class="order_time">2018-06-12 周二</div>
+                    <input type="hidden" id="order_date" value="2018-06-12"/>
+                    <div class="my-order-item-btn">
+                        <div class="order_btn">
+                            <span class="my-order-item-red" id="time_am"><a href="javaScript:amBtn()">上午</a></span>
+                            <span class="my-order-item-red" id="time_pm"><a href="javaScript:pmBtn()">下午</a></span>
+                        </div>
+                    </div>
+                    <div class="order_time_info box">
+                        <div id="table_info_1">
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('8:10')" class="time_url">8:10</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('8:20')" class="time_url">8:20</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('8:30')" class="time_url">8:30</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('8:40')" class="time_url">8:40</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('8:50')" class="time_url">8:50</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('9:00')" class="time_url">9:00</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('9:10')" class="time_url">9:10</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('9:20')" class="time_url">9:20</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('9:30')" class="time_url">9:30</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('9:40')" class="time_url">9:40</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('9:50')" class="time_url">9:50</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('10:00')" class="time_url">10:00</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('10:10')" class="time_url">10:10</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('10:20')" class="time_url">10:20</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('10:30')" class="time_url">10:30</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('10:40')" class="time_url">10:40</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('10:50')" class="time_url">10:50</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('11:10')" class="time_url">11:10</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('11:10')" class="time_url">11:10</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('11:20')" class="time_url">11:20</a></span></div>
+                        </div>
+                        <div id="table_info_2" hidden>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('14:10')" class="time_url">14:10</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('14:20')" class="time_url">14:20</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('14:30')" class="time_url">14:30</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('14:40')" class="time_url">14:40</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('14:50')" class="time_url">14:50</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('15:00')" class="time_url">15:00</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('15:10')" class="time_url">15:10</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('15:20')" class="time_url">15:20</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('15:30')" class="time_url">15:30</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('15:40')" class="time_url">15:40</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('15:50')" class="time_url">15:50</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('16:00')" class="time_url">16:00</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('16:10')" class="time_url">16:10</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('16:20')" class="time_url">16:20</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('16:30')" class="time_url">16:30</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('16:40')" class="time_url">16:40</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('16:50')" class="time_url">16:50</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('17:10')" class="time_url">17:10</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('17:10')" class="time_url">17:10</a></span></div>
+                            <div class="table_time"><span class="order_time_info"><a
+                                    href="javascript:ensureTime('17:20')" class="time_url">17:20</a></span></div>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+        </ul>
+        <div id="loginmodal" style="display:none;">
+            <h1>User Login</h1>
+            <form id="loginform" name="loginform" method="post" action="index.html">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" class="txtfield" tabindex="1">
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" class="txtfield" tabindex="2">
+
+                <div class="center"><input type="submit" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal"
+                                           value="Log In" tabindex="3"></div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!--container-end-->
+
+
+</body>
+
+
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.tools.min.js"></script>
+<script src="js/folder.js"></script>
+<script>
+
+    //确定时间
+    function ensureTime(ensureTime) {
+//		alert(ensureTime);
+//   alert($("#order_date").val());
+//   var date = $("#order_date").val();
+        //跳转到登录页面
+//   $("#container").dialog("regLogPage.html");
+        $('#container').load("regLogPage.html");
+
+    }
+
+    //上下午按钮切换
+    function pmBtn() {
+        $("#table_info_1").hide();
+        $("#table_info_2").show();
+
+    }
+
+    function amBtn() {
+        $("#table_info_1").show();
+        $("#table_info_2").hide();
+    }
+</script>
+</html>

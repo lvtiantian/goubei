@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>耳鼻咽喉头颈外科</title>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+
+
+<link href="scripts/artdialog/ui-dialog.css" rel="stylesheet" type="text/css" />
+<link href="skin/default/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="scripts/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/jquery/Validform_v5.3.2_min.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/artdialog/dialog-plus-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/webuploader/webuploader.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="editor/kindeditor-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/uploader.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/laymain.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<!--banner 脚本-->
+<script src="js/TouchSlide.1.1.js"></script>
+<!--banner 脚本-->
+    <style>
+        #container{
+            margin-top:3.5rem;
+        }
+        #nav{
+            top:2rem;
+        }
+        .coupons-tabBox.datebox {
+            /*margin-top: 28px;*/
+        }
+        .coupons-tabBox table{text-align: center;font-size: 15px;width:100%;border:1px solid white;height: 30px;
+            border-top:1px solid #e0e0e0;
+            border-left:1px solid #e0e0e0
+        }
+        .coupons-tabBox table td{
+            height:1rem;
+            font-size: 0.425rem;border-right:1px solid #e0e0e0;
+            border-bottom:1px solid #e0e0e0
+        }
+        #menu_con{
+            margin:0;
+        }
+        .coupons-tabBox .coupons-tabBoxitem .coupons-txt font.state{
+            float:right;
+            margin-right:0.2rem;
+            font-size:0.3rem;
+            border: 1px solid #2ac845;
+            color:#2ac845;
+            padding:2px 5px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            margin-top:0.6rem;
+        }
+        .coupons-tabBox .coupons-tabBoxitem .coupons-txt font.state.stop{
+            color:#ff0000;
+            border-color: #f00;
+        }
+        .coupons-tabBox .coupons-tabBoxitem .coupons-txt font.state.cantUse{
+            color: #ff8600;
+            border-color: #ff8600;
+        }
+        .coupons-tabBox .coupons-tabBoxitem .coupons-txt font.moneytext{
+            float: right;
+            margin-right:0.2rem;
+            font-size:0.4rem;
+        }
+        .coupons-tabBox .coupons-tabBoxitem .coupons-txt font.money{
+            font-size: 0.625rem;
+            color:#367fb7;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header" id="header">
+<a href="javascript:history.go(-1)" target=_self class="back">返回</a>
+<h1>选择医生</h1><br>
+<!--top-->
+
+</header>
+<!--header-end-->
+
+<!--时间设置-->
+
+<div class="container" id="container">
+<!--
+	作者：25319163@qq.com
+	时间：2018-06-11
+	描述：class="container" id="container"
+-->
+<div class="coupons-tabBox datebox">
+	<!--<ul>
+		<li style="font-size: small;border:1px solid red;border-bottom: 2px;">6月6号 </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<li style="font-size: small;">6月7号</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<li style="font-size: small;">6月8号</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<li style="font-size: small;">6月9号</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<li style="font-size: small;">6月10号</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<li style="font-size: small;">6月11号</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<li style="font-size: small;">6月12号</li>
+	</ul>-->
+  <table>
+  	<tr>
+  		<td style="background-color: #a4dcfb;">6月6号</td>
+  		<td>6月7号</td>
+  		<td>6月8号</td>
+  		<td>6月9号</td>
+  		<td>6月10号</td>
+  		<td>6月11号</td>
+  		<td>6月12号</td>
+  	</tr>
+  </table>
+
+</div>
+<!-- 滑动选项卡 Start -->
+<div id="leftTabBox" class="coupons-tabBox">    
+   <ul id="nav" class="docList_li">
+      <li onclick="javaScript:docClass01()"><span class="selected" style="color: #367fb7;"><b>全部</b></span></li>
+      <li onclick="javaScript:docClass02()"><span><b>国家特贴</b></span></li>
+      <li onclick="javaScript:docClass03()"><span><b>省优专家</b></span></li>
+      <li onclick="javaScript:docClass04()"><span><b>主任医师</b></span></li>
+    </ul>
+    <!--内容-->
+    <div id="menu_con" class="docList_div" style="margin:0">
+    <section class="tag" style="display:block">
+       <div class="coupons-tabBoxitem">
+            <div class="coupons-img "><a href="orderDoc.html"><img src="images/doc.png"/></a></div>
+            <div class="coupons-txt">
+             <a href="orderDoc.html" class="doc_url"><lable class="docList_lable1">张永康</lable>  <lable class="docList_lable2" >省优专家</lable>
+                 <font class="state cantUse">已约满</font>
+              <span>山西省人民医院<br />耳鼻咽喉头颈外科
+              <font class="moneytext">参考费用<font class="money">￥25.00</font></font>
+              </span>
+              
+              </a>
+            </div>
+       </div>
+       <div class="coupons-tabBoxitem">
+            <div class="coupons-img "><a href="orderDoc.html"><img  src="images/doc.png" class="img-circle"/></a></div>
+            <div class="coupons-txt">
+            	<a href="orderDoc.html" class="doc_url">
+              <lable class="docList_lable1">康静&nbsp;&nbsp; </lable>  <lable class="docList_lable2" >主任医师</lable>
+              <font class="state stop">已停诊</font>
+              <span>山西省人民医院<br />耳鼻咽喉头颈外科
+              <font class="moneytext">参考费用<font class="money">￥15.00</font></font>
+              </span></a>
+            </div>
+       </div>
+       <div class="coupons-tabBoxitem">
+           <div class="coupons-img "><a href="orderDoc.html"><img src="images/doc.png"/></a></div>
+            <div class="coupons-txt">
+            	<a href="orderDoc.html" class="doc_url">
+            <lable class="docList_lable1">王景玉</lable>  <lable class="docList_lable2" >省优专家</lable>
+            <font class="state cantUse">已约满</font>
+              <span>山西省人民医院<br />耳鼻咽喉头颈外科
+              <font class="moneytext">参考费用<font class="money">￥20.00</font></font>
+              </span></a>
+            </div>
+       </div>
+       <div class="coupons-tabBoxitem">
+            <div class="coupons-img "><a href="orderDoc.html"><img src="images/doc.png"/></a></div>
+            <div class="coupons-txt">
+            	<a href="orderDoc.html" class="doc_url">
+            <lable class="docList_lable1">袁乃荣</lable>  <lable class="docList_lable2" >省优专家</lable>
+            <font  class="state canBeUse">可预约</font>
+              <span>山西省人民医院<br />耳鼻咽喉头颈外科
+              <font class="moneytext">参考费用<font class="money">￥10.00</font></font>
+              </span></a>
+            </div>
+       </div>
+    </section>
+    <!-- 全部 -->
+    <section class="tag" style="display:none">
+    </section>
+    <!-- 国家特贴 -->
+    <section class="tag" style="display:none">
+      <div class="coupons-tabBoxitem">
+            <div class="coupons-img "><a href="orderDoc.html"><img src="images/doc.png"/></a></div>
+            <div class="coupons-txt">
+            	<a href="orderDoc.html" class="doc_url">
+            <lable class="docList_lable1">王景玉</lable>  <lable class="docList_lable2">省优专家</lable>
+                    <font  class="state canBeUse">可预约</font>
+              <span>山西省人民医院<br />耳鼻咽喉头颈外科
+              <font class="moneytext">参考费用<font class="money">￥20.00</font></font>
+              </span></a>
+            </div>
+       </div>
+       <div class="coupons-tabBoxitem">
+            <div class="coupons-img "><a href="orderDoc.html"><img src="images/doc.png"/></a></div>
+            <div class="coupons-txt">
+            	<a href="orderDoc.html" class="doc_url">
+            <lable class="docList_lable1">袁乃荣</lable>  <lable class="docList_lable2">省优专家</lable>
+                    <font  class="state canBeUse">可预约</font>
+              <span>山西省人民医院<br />耳鼻咽喉头颈外科
+              <font class="moneytext">参考费用<font class="money">￥20.00</font></font>
+              </span></a>
+            </div>
+       </div>
+    </section>
+    <!-- 省优专家 -->   
+    
+    <section class="tag" style="display:none">
+       <div class="coupons-tabBoxitem">
+            <div class="coupons-img "><a href="orderDoc.html"><img src="images/doc.png"/></a></div>
+            <div class="coupons-txt">
+            	<a href="orderDoc.html" class="doc_url">
+              <lable class="docList_lable1">康静&nbsp;&nbsp; </lable>  <lable class="docList_lable2">主任医师</lable>
+                    <font  class="state canBeUse">可预约</font>
+              <span>山西省人民医院<br />耳鼻咽喉头颈外科
+              <font class="moneytext">参考费用<font class="money">￥20.00</font></font>
+              </span></a>
+            </div>
+       </div>
+    </section>
+    <!-- 主任医师 -->  
+  </div>
+<!-- 内容结束 -->
+
+</div>
+<script>
+var tabs=function(){
+    function tag(name,elem){
+        return (elem||document).getElementsByTagName(name);
+    }
+    //获得相应ID的元素
+    function id(name){
+        return document.getElementById(name);
+    }
+    function first(elem){
+        elem=elem.firstChild;
+        return elem&&elem.nodeType==1? elem:next(elem);
+    }
+    function next(elem){
+        do{
+            elem=elem.nextSibling;  
+        }while(
+            elem&&elem.nodeType!=1  
+        )
+        return elem;
+    }
+    return {
+        set:function(elemId,tabId){
+            var elem=tag("li",id(elemId));
+            var tabs=tag("section",id(tabId));
+            var listNum=elem.length;
+            var tabNum=tabs.length;
+            for(var i=0;i<listNum;i++){
+                    elem[i].onclick=(function(i){
+                        return function(){
+                            for(var j=0;j<tabNum;j++){
+                                if(i==j){
+                                    tabs[j].style.display="block";
+                                    //alert(elem[j].firstChild);
+                                    elem[j].firstChild.className="selected";
+                                }
+                                else{
+                                    tabs[j].style.display="none";
+                                    elem[j].firstChild.className="";
+                                }
+                            }
+                        }
+                    })(i)
+            }
+        }
+    }
+}();
+tabs.set("nav","menu_con");//执行
+</script> 
+<script language="JavaScript">
+ $(document).ready(function(){
+	$('html,body').animate({scrollTop:'0px'},"fast");
+//$("#nav li").click(function(){
+//	$('html,body').animate({scrollTop: '0px'},"fast");
+//});
+  });
+</script>
+<!-- 选项卡 over -->
+
+</div>
+<!--container-end-->
+</body>
+</html>
